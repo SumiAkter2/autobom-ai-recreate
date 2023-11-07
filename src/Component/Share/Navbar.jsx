@@ -1,6 +1,7 @@
 import { HiMenuAlt1 } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
+import PrimaryButton from "./Button/PrimaryButton";
 
 const Navbar = () => {
   const navItem = (
@@ -8,7 +9,7 @@ const Navbar = () => {
       <li className="hover:text-white">
         <div className="dropdown dropdown-hover">
           <label tabIndex={0} className="flex m-1">
-            Hover <IoIosArrowDown size='20px' className="mt-2 ml-2 "/>
+            Hover <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
           </label>
           <ul
             tabIndex={0}
@@ -94,9 +95,7 @@ const Navbar = () => {
             Login
           </button>
 
-          <button className="btn bg-orange-500 border-0 text-white lg:btn-md btn-sm hover:text-black hover:bg-orange-300 rounded-none">
-            Start Free Trial
-          </button>
+          <PrimaryButton text=" Start Free Trial"></PrimaryButton>
         </div>
       </div>
     </div>

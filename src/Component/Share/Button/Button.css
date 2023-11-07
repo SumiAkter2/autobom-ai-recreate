@@ -1,0 +1,54 @@
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 2px;
+    background: #f2c83b;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 #f2c83b;
+}
+
+.button:hover {
+    color: #000;
+    box-shadow: inset 0px -100px 0px 0 #fff;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.secondary-button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 1px solid white;
+    box-shadow: inset 0 0 0 0 transparent;
+}
+
+.secondary-button:hover {
+    color: #000;
+    box-shadow: inset 0px -100px 0px 0 #fff;
+}
+
+.secondary-button:active {
+    transform: scale(0.9);
+}
