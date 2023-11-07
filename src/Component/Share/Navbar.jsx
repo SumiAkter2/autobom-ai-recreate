@@ -9,7 +9,7 @@ const Navbar = () => {
       <li className="hover:text-white">
         <div className="dropdown dropdown-hover">
           <label tabIndex={0} className="flex m-1">
-            Hover <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
+            Products <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
           </label>
           <ul
             tabIndex={0}
@@ -38,14 +38,14 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
+    <div className="fixed w-full ">
       <div className="bg-[#269e16]">
         <p className="text-white text-center font-bold py-3 text-lg px-4 lg:px-0">
           FREE WEBINAR THIS THURSDAY! PFAS Restrictions in Electronics: What You
           Need to Know - Register Now, limited spaces left
         </p>
       </div>
-      <div className="navbar bg-transparent fixed lg:top-10 top-20 font-bold lg:px-6 text-white py-8">
+      <div className="navbar bg-transparent font-bold lg:px-6 text-white py-6">
         <div className="navbar-start">
           {/* menu drawer */}
           <div className="drawer lg:hidden ">
@@ -64,18 +64,16 @@ const Navbar = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-80 min-h-full bg-slate-300 text-black ">
+              <ul className="menu p-4 w-[350px] min-h-full bg-slate-300 text-black ">
                 {/* Sidebar content here */}
                 {navItem}
               </ul>
-              <div className=" lg:hidden flex absolute top-52 ml-4">
-                <button className="btn bg-orange-500 border-0 text-white lg:btn-md btn-sm hover:text-black hover:bg-orange-300">
+              <div className=" lg:hidden flex absolute top-36 ">
+                <button className="text-xl px-8 border-0 text-black font-semibold">
                   Login
                 </button>
 
-                <button className="btn bg-orange-500 border-0 text-white lg:btn-md btn-sm hover:text-black hover:bg-orange-300">
-                  Contact Sales
-                </button>
+                <PrimaryButton text=" Start Free Trial"></PrimaryButton>
               </div>
             </div>
           </div>
