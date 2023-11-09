@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/swiper-bundle.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
@@ -42,7 +43,7 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="my-12">
+    <div className="my-12 lg:mx-12 mx-6">
       <div id="review">
         <div className="lg:px-24 px-6 py-6">
           <img src={img} alt="img" className="w-48 mx-auto my-12" />
@@ -51,7 +52,10 @@ const Testimonial = () => {
         <Swiper
           pagination={{
             clickable: true,
-            marginTop: "300px",
+            type: "bullets",
+            // el: ".swiper-pagination",
+            dynamicMainBullets: 1,
+            position: "bottom",
           }}
           navigation={true}
           modules={[Pagination, Navigation]}
@@ -61,21 +65,22 @@ const Testimonial = () => {
             " --swiper-pagination-bullet-size": " 20px",
             "--swiper-pagination-bullet-width": " 20px",
             "--swiper-pagination-bullet-height": " 20px",
-            "--swiper-pagination-margin": " 200px",
           }}
-          className="mySwiper my-56"
+          className="mySwiper "
         >
           {client.map((c) => (
             <SwiperSlide key={c.id}>
-              <div className="text-center lg:w-[1000px] mx-auto">
-                <p className="text-3xl font-semibold">&quot;{c.des}&quot;</p>
+              <div className="text-center lg:w-[1000px] mx-auto ">
+                <p className="lg:text-3xl text-xl font-semibold px-4">
+                  &quot;{c.des}&quot;
+                </p>
                 <img
                   src={c.img}
-                  className="w-40 mx-auto mt-12 "
+                  className="w-40 mx-auto mt-6 "
                   alt="user-img"
                 />
                 <h3 className="font-semibold text-xl mt-6">{c.name}</h3>
-                <h3>{c.designation}</h3>
+                <h3 className="mb-24">{c.designation}</h3>
               </div>
             </SwiperSlide>
           ))}
