@@ -38,14 +38,14 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="fixed w-full ">
+    <div className="fixed w-full z-30">
       <div className="bg-[#269e16]">
         <p className="text-white text-center font-bold py-3 text-lg px-4 lg:px-0">
           FREE WEBINAR THIS THURSDAY! PFAS Restrictions in Electronics: What You
           Need to Know - Register Now, limited spaces left
         </p>
       </div>
-      <div className="navbar bg-transparent font-bold lg:px-6 text-white py-6">
+      <div className="navbar bg-primary font-bold lg:px-6  text-white ">
         <div className="navbar-start">
           {/* menu drawer */}
           <div className="drawer lg:hidden ">
@@ -81,7 +81,7 @@ const Navbar = () => {
             {/* <img src={logo} alt="logo" className="w-16" /> */}
             AUTOBOM.ai
           </Link>
-          <ul className="menu lg:menu-horizontal  hidden px-1 text-xl ml-12 hover:text-white">
+          <ul className="menu lg:menu-horizontal  hidden px-1 ml-12 ">
             {navItem}
           </ul>
         </div>

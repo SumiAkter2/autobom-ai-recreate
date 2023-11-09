@@ -1,7 +1,7 @@
 import CountUp from "react-countup";
 const BridgeCountUp = () => {
   return (
-    <div className="text-center font-semibold">
+    <div className="text-center font-semibold my-24">
       <h1 className="text-4xl  mt-6">Bridge the Information Divide</h1>
       <p className=" text-xl my-4">
         Access to the world&apos;s most comprehensive electronic supply chain
