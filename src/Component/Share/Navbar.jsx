@@ -19,46 +19,48 @@ const Navbar = () => {
   const navItem = (
     <div className="lg:flex justify-between items-center relative">
       <div className="lg:flex justify-center items-center z-10 ">
-        <li>
-          <div className="dropdown dropdown-hover z-50">
-            <label
-              tabIndex={0}
-              className="flex m-1 hover:text-secondary text-white"
-            >
-              <span className="z-10"> Products</span>{" "}
-              <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
-            </label>
-            <div
-              tabIndex={0}
-              className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[700px]  top-10 border text-black p-8 z-50"
-            >
-              <div className="lg:flex justify-center items-center">
-                <div>
-                  <h3 className="text-xl my-2">Our Platform</h3>
-                  <p className="">Risk intelligence at your fingertips</p>
-                  <button className="mt-3 text-skyblue-500 flex  items-center">
-                    Learn More <MdArrowForwardIos className="ml-2" />
-                  </button>
-                </div>
-                <div className="ml-4">
-                  {featureInfo.map((f) => (
-                    <div key={f.id}>
-                      <div className="flex justify-start items-center gap-3">
-                        <img className="w-6" src={f.img} alt="logo" />
-                        <div>
-                          <h3 className="text-xl my-1">{f.title}</h3>
-                          <Link to="/coming" className="text-gray-600">
-                            {f.btn}
-                          </Link>
+        <Link to="/l">
+          <li>
+            <div className="dropdown dropdown-hover z-50">
+              <label
+                tabIndex={0}
+                className="flex m-1 hover:text-secondary text-white"
+              >
+                <span className="z-10"> Products</span>{" "}
+                <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
+              </label>
+              <div
+                tabIndex={0}
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[700px]  top-10 border text-black p-8 z-50"
+              >
+                <div className="lg:flex justify-center items-center">
+                  <div>
+                    <h3 className="text-xl my-2">Our Platform</h3>
+                    <p className="">Risk intelligence at your fingertips</p>
+                    <button className="mt-3 text-skyblue-500 flex  items-center">
+                      Learn More <MdArrowForwardIos className="ml-2" />
+                    </button>
+                  </div>
+                  <div className="ml-4">
+                    {featureInfo.map((f) => (
+                      <div key={f.id}>
+                        <div className="flex justify-start items-center gap-3">
+                          <img className="w-6" src={f.img} alt="logo" />
+                          <div>
+                            <h3 className="text-xl my-1">{f.title}</h3>
+                            <Link to="/coming" className="text-gray-600">
+                              {f.btn}
+                            </Link>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
+        </Link>
 
         <li>
           <div className="dropdown dropdown-hover z-50">
