@@ -19,7 +19,7 @@ const Navbar = () => {
   const navItem = (
     <div className="lg:flex justify-between items-center relative">
       <div className="lg:flex justify-center items-center z-10 ">
-        <Link to="/l">
+        <Link to="/coming">
           <li>
             <div className="dropdown dropdown-hover z-50">
               <label
@@ -62,134 +62,138 @@ const Navbar = () => {
           </li>
         </Link>
 
-        <li>
-          <div className="dropdown dropdown-hover z-50">
-            <label
-              tabIndex={0}
-              className="flex m-1 hover:text-secondary text-white"
-            >
-              <span className="z-1"> Sources</span>{" "}
-              <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
-            </label>
-            <div
-              tabIndex={0}
-              className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-black p-8 z-50"
-            >
-              <div className="ml-4">
-                <h1 className="text-xl my-2">By Industry </h1>
-                <p className="flex justify-start items-center my-4">
-                  <RiComputerLine
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Consumer Electronics
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <BsAirplaneEngines
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Aerospace & Defense
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <BiSolidCarMechanic
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Automotive
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <GiRadioTower
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Telecommunications
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <BiFirstAid
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Healthcare & Medical Devices
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <GiCargoCrane
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Industrial
-                </p>
+        <Link to="/solutions">
+          <li>
+            <div className="dropdown dropdown-hover z-50">
+              <label
+                tabIndex={0}
+                className="flex m-1 hover:text-secondary text-white"
+              >
+                <span className="z-1"> Sources</span>{" "}
+                <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
+              </label>
+              <div
+                tabIndex={0}
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-black p-8 z-50"
+              >
+                <div className="ml-4">
+                  <h1 className="text-xl my-2">By Industry </h1>
+                  <p className="flex justify-start items-center my-4">
+                    <RiComputerLine
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Consumer Electronics
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <BsAirplaneEngines
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Aerospace & Defense
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <BiSolidCarMechanic
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Automotive
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <GiRadioTower
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Telecommunications
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <BiFirstAid
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Healthcare & Medical Devices
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <GiCargoCrane
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Industrial
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div className="dropdown dropdown-hover z-50">
-            <label
-              tabIndex={0}
-              className="flex m-1 hover:text-secondary text-white justify-center items-center"
-            >
-              Resources <IoIosArrowDown size="16px" className=" ml-2 " />
-            </label>
-            <div
-              tabIndex={0}
-              className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-black p-8 z-50"
-            >
-              <div className="ml-4">
-                <p className="flex justify-start items-center my-4">
-                  <HiOutlineNewspaper
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Blog
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <MdOutlineDeviceHub
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Content Hubs
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <SlEnvolopeLetter
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Newsletter
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <BiSpreadsheet
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Case Studies
-                </p>
-                <p className="flex justify-start items-center my-4">
-                  <GoNote
-                    color="skyblue"
-                    size="25px"
-                    className="mr-2 font-thin"
-                  />
-                  Guides
-                </p>
-                <p className="text-xl mt-4">Resource Hub </p>
-                <button className="mt-3 text-skyblue-500 flex  items-center">
-                  View All Resources <MdArrowForwardIos className="ml-2" />
-                </button>
+          </li>
+        </Link>
+        <Link to="/resources">
+          <li>
+            <div className="dropdown dropdown-hover z-50">
+              <label
+                tabIndex={0}
+                className="flex m-1 hover:text-secondary text-white justify-center items-center"
+              >
+                Resources <IoIosArrowDown size="16px" className=" ml-2 " />
+              </label>
+              <div
+                tabIndex={0}
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-black p-8 z-50"
+              >
+                <div className="ml-4">
+                  <p className="flex justify-start items-center my-4">
+                    <HiOutlineNewspaper
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Blog
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <MdOutlineDeviceHub
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Content Hubs
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <SlEnvolopeLetter
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Newsletter
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <BiSpreadsheet
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Case Studies
+                  </p>
+                  <p className="flex justify-start items-center my-4">
+                    <GoNote
+                      color="skyblue"
+                      size="25px"
+                      className="mr-2 font-thin"
+                    />
+                    Guides
+                  </p>
+                  <p className="text-xl mt-4">Resource Hub </p>
+                  <button className="mt-3 text-skyblue-500 flex  items-center">
+                    View All Resources <MdArrowForwardIos className="ml-2" />
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
+        </Link>
       </div>
 
       <div className=" lg:flex lg:absolute lg:-right-[600px] mt-6 lg:mt-0">

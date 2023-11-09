@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Feature = () => {
   return (
@@ -97,7 +98,10 @@ const Feature = () => {
               {f.feature6}
             </p>
             <div className=" lg:mx-8 absolute bottom-5 left-0 px-2">
-              <PrimaryButton text={f.btn} />
+              <Link to="/coming">
+                {" "}
+                <PrimaryButton text={f.btn} />
+              </Link>
             </div>
           </div>
         ))}
