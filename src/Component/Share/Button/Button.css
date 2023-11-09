@@ -1,4 +1,5 @@
 .button {
+    z-index: 0;
     position: relative;
     display: inline-block;
     margin: 15px;
@@ -28,6 +29,7 @@
 }
 
 .secondary-button {
+    z-index: 0;
     position: relative;
     display: inline-block;
     margin: 15px;

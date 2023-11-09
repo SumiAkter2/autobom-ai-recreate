@@ -9,7 +9,7 @@ const Banner = () => {
           One Platform to Manage Supply Chain Risk
         </h1>
         <p className="py-6 text-xl">
-          Build resilience in <span className="underline">engineering</span>,{" "}
+          Build resilience in <span className="underline">engineering</span>,
           <span className="underline">compliance </span>, &
           <span className="underline">procurement</span> powered by the
           world`&apos`s most comprehensive supply chain and component data.

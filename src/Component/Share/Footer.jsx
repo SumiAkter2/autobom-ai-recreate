@@ -1,4 +1,3 @@
-import logo from "../../assets/logo.png";
 import PrimaryButton from "./Button/PrimaryButton";
 
 const Footer = () => {
@@ -114,7 +113,7 @@ const Footer = () => {
         </nav>
       </footer>
 
-      <footer className="footer px-10 py-4  bg-accent text-white border-t border-b border-gray-100">
+      <footer className="footer px-10 py-4  bg-accent text-white border-t border-b border-gray-700">
         <nav>
           <h1 className="text-xl font-bold">AUTOBOM.AI</h1>
         </nav>
@@ -162,7 +161,7 @@ const Footer = () => {
         </nav>
         <nav className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">
-            <p>Copy &copy; All Rights Reserved By RYDE </p>
+            <p>Copy &copy; All Rights Reserved By AUTOBOM.ai </p>
           </div>
         </nav>
       </footer>
