@@ -6,7 +6,7 @@ import PrimaryButton from "./Button/PrimaryButton";
 const Navbar = () => {
   const navItem = (
     <>
-      <li className="hover:text-white">
+      <li>
         <div className="dropdown dropdown-hover">
           <label tabIndex={0} className="flex m-1">
             Products <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
@@ -25,12 +25,12 @@ const Navbar = () => {
         </div>
       </li>
 
-      <li className="hover:text-white">
-        <Link to="/" className="flex  items-center">
+      <li>
+        <Link to="/" className="flex items-center">
           Solution <IoIosArrowDown />
         </Link>
       </li>
-      <li className="hover:text-white">
+      <li>
         <Link to="/">
           Resources <IoIosArrowDown />
         </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
             {/* <img src={logo} alt="logo" className="w-16" /> */}
             AUTOBOM.ai
           </Link>
-          <ul className="menu lg:menu-horizontal  hidden px-1 ml-12 ">
+          <ul className="menu lg:menu-horizontal  hidden px-1 ml-12 text-xl">
             {navItem}
           </ul>
         </div>

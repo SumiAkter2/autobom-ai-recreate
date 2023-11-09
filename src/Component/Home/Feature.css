@@ -1,0 +1,88 @@
+/* Container styles */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 30px;
+    /* padding-left: 15px; */
+    overflow: hidden;
+    /* One of the importing things for slide effect */
+}
+
+.slider div {
+    font-weight: 700;
+    height: 50px;
+    padding: 2px 8px;
+    color: #000;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    box-sizing: border-box;
+}
+
+.slider-text-1 {
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    animation: slide 9s linear infinite;
+}
+
+.slider-text-2 {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+.slider-text-3 {
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+}
+.slider-text-4 {
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+}
+.slider-text-5 {
+    border-top: 2px solid skyblue;
+    border-bottom: 2px solid skyblue;
+}
+
+@keyframes slide {
+    0% {
+        margin-top: -300px;
+    }
+
+    5% {
+        /* For stopping effect */
+        margin-top: -200px;
+    }
+
+    33% {
+        margin-top: -200px;
+    }
+
+    38% {
+        /* For stopping effect */
+        margin-top: -100px;
+    }
+
+    66% {
+        margin-top: -100px;
+    }
+
+    71% {
+        /* For stopping effect */
+        margin-top: -400px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
