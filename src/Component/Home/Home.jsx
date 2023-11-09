@@ -3,6 +3,7 @@ import Brand from "./Brand";
 import Testimonial from "./Testimonial";
 import BridgeCountUp from "./BridgeCountUp";
 import Feature from "./Feature";
+import Profitability from "./Profitability";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <BridgeCountUp />
       <Feature />
       <Testimonial />
+      <Profitability />
     </div>
   );
 };

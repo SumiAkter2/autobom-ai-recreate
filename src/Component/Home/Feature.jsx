@@ -1,14 +1,10 @@
 import { featureInfo } from "../Info/Info";
 import { MdOutlineDone } from "react-icons/md";
 import PrimaryButton from "../Share/Button/PrimaryButton";
-import "./Feature.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import { Autoplay } from "swiper/modules";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import { Autoplay } from "swiper/modules";
 
 const Feature = () => {
   return (
@@ -32,28 +28,33 @@ const Feature = () => {
               className="mySwiper h-12"
             >
               <SwiperSlide>
-                <p className="border-b-2  font-semibold   border-b-purple-500  w-48 p-1 ">
+                <p className="border-b-2  font-bold   border-b-purple-500  w-48 ">
                   Business Leadership
                 </p>
               </SwiperSlide>
               <SwiperSlide>
-                <p className="border-b-2  font-semibold   border-b-red-500  w-48 p-1 ">
+                <p className="border-b-2  font-bold   border-b-red-500  w-48 ">
                   Compliance Managers
                 </p>
               </SwiperSlide>
               <SwiperSlide>
-                <p className=" border-b-2  font-semibold   border-b-yellow-500  w-48 p-1 ">
+                <p className=" border-b-2  font-bold   border-b-yellow-500  w-48  ">
                   ESG Strategist
                 </p>
               </SwiperSlide>
               <SwiperSlide>
-                <p className="border-b-2  font-semibold   border-b-green-500  w-48 p-1 ">
+                <p className="border-b-2  font-bold   border-b-green-500  w-48  ">
                   Supply Chain Managers
                 </p>
               </SwiperSlide>
               <SwiperSlide>
-                <p className=" border-b-2  font-semibold   border-b-orange-500  w-48 p-1 ">
+                <p className=" border-b-2  font-bold   border-b-orange-500  w-48  ">
                   Design Engineers
+                </p>
+              </SwiperSlide>
+              <SwiperSlide>
+                <p className=" border-b-2  font-bold   border-b-blue-500  w-48 ">
+                  Component Engineers
                 </p>
               </SwiperSlide>
             </Swiper>
@@ -65,7 +66,7 @@ const Feature = () => {
         {featureInfo.map((f) => (
           <div
             key={f.id}
-            className="font-semibold shadow-lg my-6 border-2 lg:w-[350px] p-8 h-[570px]  w-[340px] relative"
+            className="font-bold shadow-lg my-6 border-2 lg:w-[350px] p-8 h-[570px]  w-[340px] relative"
           >
             <img className="w-8 my-3" src={f.img} alt="Image" />
             <h1 className="text-2xl my-2"> {f.title}</h1>
