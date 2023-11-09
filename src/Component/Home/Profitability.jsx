@@ -3,7 +3,7 @@ import PrimaryButton from "../Share/Button/PrimaryButton";
 const Profitability = () => {
   return (
     <div className="lg:flex justify-center items-center gap-10 my-20 font-semibold">
-      <div className="lg:w-[400px] text-center lg:text-start">
+      <div className="lg:w-[400px] text-center lg:text-start px-6 lg:px-0">
         <h1 className="lg:text-4xl text-3xl text-primary mb-6">
           Increase Efficiency and Profitability
         </h1>

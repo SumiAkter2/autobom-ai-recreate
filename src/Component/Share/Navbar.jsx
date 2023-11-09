@@ -207,7 +207,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-30">
       <div className="bg-[#269e16]">
-        <p className="text-white text-center font-bold py-3 text-lg px-4 lg:px-0">
+        <p className="text-white text-center font-bold py-3 lg:text-lg px-4 lg:px-0 text-sm">
           FREE WEBINAR THIS THURSDAY! PFAS Restrictions in Electronics: What You
           Need to Know - Register Now, limited spaces left
         </p>

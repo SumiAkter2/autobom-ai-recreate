@@ -5,7 +5,7 @@ import img4 from "../../assets/dashboard/ford.png";
 const Brand = () => {
   return (
     <div className="shadow-lg">
-      <div className="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-4  lg:max-w-2xl w-full  my-12 mx-auto gap-6 pb-6">
+      <div className="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-4  lg:max-w-2xl w-full  my-12 mx-auto gap-6 pb-6 px-6">
         <img className="lg:w-32 " src={img1} alt="brand image" />
 
         <img className="lg:w-20 w-16" src={img2} alt="brand image" />

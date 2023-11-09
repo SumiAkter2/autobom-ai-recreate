@@ -11,7 +11,7 @@ const Feature = () => {
   return (
     <div className="my-24">
       <div className="text-center my-12">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-4xl font-semibold px-6 lg:px-0">
           One Flexible, Integrated, and Collaborative Platform
         </h1>
         <div className="flex justify-center items-center ">
