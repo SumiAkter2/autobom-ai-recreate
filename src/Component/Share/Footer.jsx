@@ -1,28 +1,123 @@
 import logo from "../../assets/logo.png";
+import PrimaryButton from "./Button/PrimaryButton";
+
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <div className="bg-[#075b8d] text-white p-8 lg:flex justify-between items-center text-center">
+        <h1 className="text-4xl lg:ml-12">Get started with a free trial! </h1>
+        <PrimaryButton text="Start Free Trial!" />
+      </div>
+      <footer className="footer p-10 bg-accent text-white lg:px-20">
         <nav>
-          <img src={logo} alt="logo" className="w-16" />
+          <header className="text-white text-xl font-semibold my-3">
+            Products
+          </header>
+          <header className="link link-hover font-semibold text-[16px]  mt-2">
+            Part Risk Manager
+          </header>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Sub-Tier Intelligence
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Compliance Manager
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Supply Chain Watch
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            PCN Manager
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Supplier Insights
+          </a>
         </nav>
         <nav>
-          <header className="footer-title">Company</header>
-          <header className="link link-hover">Services</header>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Investment</a>
-          <a className="link link-hover">Hiring</a>
+          <header className="text-white text-xl font-semibold my-3">
+            Solutions By Role
+          </header>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Engineering
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Supply Chain
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Compliance
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Procurement
+          </a>
         </nav>
         <nav>
-          <header className="footer-title">Legal</header>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <header className="text-white text-xl font-semibold my-3">
+            Solutions By Industry
+          </header>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Consumer Electronics
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Aerospace & Defense
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Healthcare & Medical
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Devices
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Automotive
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Telecommunications
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Industrial
+          </a>
+        </nav>
+        <nav>
+          <header className="text-white text-xl font-semibold my-3">
+            Resources
+          </header>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Resource Hub
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Blog
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Content Hubs
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Newsletter
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Case Studies
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Guides
+          </a>
+        </nav>
+        <nav>
+          <header className="text-white text-xl font-semibold my-3">
+            Company
+          </header>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            About Us
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Contact Us
+          </a>
+          <a className="link link-hover font-semibold text-[16px]  mt-2">
+            Linkedin
+          </a>
         </nav>
       </footer>
-      <footer className="footer px-10 py-4  bg-base-200 text-base-content  border-t border-primary ">
-        <p>Copy &copy; All Rights Reserved By RYDE </p>
+
+      <footer className="footer px-10 py-4  bg-accent text-white border-t border-b border-gray-100">
+        <nav>
+          <h1 className="text-xl font-bold">AUTOBOM.AI</h1>
+        </nav>
         <nav className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">
             <a>
@@ -58,6 +153,16 @@ const Footer = () => {
                 <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
               </svg>
             </a>
+          </div>
+        </nav>
+      </footer>
+      <footer className="footer px-10 py-4  bg-accent text-white   ">
+        <nav>
+          <h1 className="">Privacy Policy</h1>
+        </nav>
+        <nav className="md:place-self-center md:justify-self-end">
+          <div className="grid grid-flow-col gap-4">
+            <p>Copy &copy; All Rights Reserved By RYDE </p>
           </div>
         </nav>
       </footer>

@@ -33,7 +33,7 @@ const Profitability = () => {
           />
 
           <div className="flex lg:justify-start justify-center items-center ">
-            <PrimaryButton text="Start Free Trial" className="w-96" />
+            <PrimaryButton text="Start Free Trial" />
           </div>
         </form>
       </div>
