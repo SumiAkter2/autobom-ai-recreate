@@ -14,6 +14,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { GoNote } from "react-icons/go";
 import { Link } from "react-router-dom";
 import { featureInfo } from "../Info/Info";
+import NavAccordion from "../Home/NavAccordion";
 
 const Navbar = () => {
   const navItem = (
@@ -26,7 +27,7 @@ const Navbar = () => {
                 tabIndex={0}
                 className="flex m-1 hover:text-secondary text-white"
               >
-                <span className="z-10"> Products</span>{" "}
+                <span className="z-10"> Products</span>
                 <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
               </label>
               <div
@@ -196,7 +197,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className=" lg:flex lg:absolute lg:-right-[600px] mt-6 lg:mt-0">
+      <div className=" lg:flex lg:absolute lg:-right-[650px] mt-6 lg:mt-0">
         <button className="text-xl px-8 border-0 text-white font-semibold mb-6 lg:mb-0">
           Login
         </button>
@@ -207,13 +208,13 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-30">
       <div className="bg-[#269e16]">
-        <p className="text-white text-center font-bold py-3 lg:text-lg px-4 lg:px-0 text-sm">
+        <p className="text-white text-center font-bold py-3 lg:text-lg px-4 lg:px-0 text-xs">
           FREE WEBINAR THIS THURSDAY! PFAS Restrictions in Electronics: What You
           Need to Know - Register Now, limited spaces left
         </p>
       </div>
 
-      <div className="navbar bg-gradient-to-r from-[#001534] to-[#044876] font-bold lg:px-6 h-24  text-white ">
+      <div className="navbar bg-gradient-to-r from-[#001534] to-[#044876] font-bold lg:px-6 h-24 text-white ">
         <div className="navbar-start">
           {/* menu drawer */}
           <div className="drawer lg:hidden ">
@@ -232,9 +233,10 @@ const Navbar = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 w-[350px] min-h-full bg-accent  text-xl">
+              <ul className="menu p-4 w-[350px] min-h-full bg-white  text-xl ">
                 {/* Sidebar content here */}
-                {navItem}
+
+                <NavAccordion />
               </ul>
             </div>
           </div>

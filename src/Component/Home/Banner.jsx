@@ -3,7 +3,7 @@ import SecondaryButton from "../Share/Button/SecondaryButton";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-[#001534] to-[#044876] lg:h-[620px] lg:px-24 px-6 text-white lg:pt-48 pt-64 font-sans">
+    <div className="bg-gradient-to-r from-[#001534] to-[#044876] lg:h-[620px] h-[800px]  lg:px-24 px-6 text-white lg:pt-48 pt-64 font-sans">
       <div className="lg:w-[600px] ">
         <h1 className="lg:text-5xl text-3xl font-bold mb-4 leading-8 ">
           One Platform to Manage Supply Chain Risk
@@ -15,7 +15,7 @@ const Banner = () => {
           world`&apos`s most comprehensive supply chain and component data.
         </p>
 
-        <div className="my-6 lg:flex lg:justify-start justify-center items-center">
+        <div className="mt-6 mb-12 lg:flex lg:justify-start justify-center items-center">
           <PrimaryButton text="Start free trial"> </PrimaryButton>
           <SecondaryButton text2="Schedule a demo"> </SecondaryButton>
         </div>
