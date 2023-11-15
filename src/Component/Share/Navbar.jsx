@@ -1,19 +1,19 @@
-import { HiOutlineNewspaper } from "react-icons/hi";
+// import { HiOutlineNewspaper } from "react-icons/hi";
 import { HiMenuAlt1 } from "react-icons/hi";
-import { SlEnvolopeLetter } from "react-icons/sl";
-import { GiRadioTower } from "react-icons/gi";
-import { GiCargoCrane } from "react-icons/gi";
-import { BiSolidCarMechanic } from "react-icons/bi";
-import { BiFirstAid } from "react-icons/bi";
-import { BiSpreadsheet } from "react-icons/bi";
-import { BsAirplaneEngines } from "react-icons/bs";
-import { RiComputerLine } from "react-icons/ri";
-import { MdOutlineDeviceHub } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
+// import { SlEnvolopeLetter } from "react-icons/sl";
+// import { GiRadioTower } from "react-icons/gi";
+// import { GiCargoCrane } from "react-icons/gi";
+// import { BiSolidCarMechanic } from "react-icons/bi";
+// import { BiFirstAid } from "react-icons/bi";
+// import { BiSpreadsheet } from "react-icons/bi";
+// import { BsAirplaneEngines } from "react-icons/bs";
+// import { RiComputerLine } from "react-icons/ri";
+// import { MdOutlineDeviceHub } from "react-icons/md";
+// import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import { GoNote } from "react-icons/go";
+// import { GoNote } from "react-icons/go";
 import { Link } from "react-router-dom";
-import { featureInfo } from "../Info/Info";
+import f1Img from "../../assets/Feature/f1.webp";
 import NavAccordion from "../Home/NavAccordion";
 
 const Navbar = () => {
@@ -27,35 +27,31 @@ const Navbar = () => {
                 tabIndex={0}
                 className="flex m-1 hover:text-secondary text-white"
               >
-                <span className="z-10"> Products</span>
+                <span className="z-10"> About Us</span>
                 <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
               </label>
               <div
                 tabIndex={0}
-                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[700px]  top-10 border text-black p-8 z-50"
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[400px]  top-10 border text-black p-6 z-50"
               >
-                <div className="lg:flex justify-center items-center">
+                <div className="lg:flex justify-between items-center">
                   <div>
                     <h3 className="text-xl my-2">Our Platform</h3>
-                    <p className="">Risk intelligence at your fingertips</p>
-                    <button className="mt-3 text-skyblue-500 flex  items-center">
+                    <p className="">Vision</p>
+                    {/* <button className="mt-3 text-skyblue-500 flex  items-center">
                       Learn More <MdArrowForwardIos className="ml-2" />
-                    </button>
+                    </button> */}
                   </div>
                   <div className="ml-4">
-                    {featureInfo.map((f) => (
-                      <div key={f.id}>
-                        <div className="flex justify-start items-center gap-3">
-                          <img className="w-6" src={f.img} alt="logo" />
-                          <div>
-                            <h3 className="text-xl my-1">{f.title}</h3>
-                            <Link to="/coming" className="text-gray-600">
-                              {f.btn}
-                            </Link>
-                          </div>
-                        </div>
+                    <div className="flex justify-start items-center gap-3">
+                      <img className="w-6" src={f1Img} alt="logo" />
+                      <div>
+                        <h3 className="text-xl my-1">Autobom</h3>
+                        <Link to="/coming" className="text-gray-600">
+                          Learn More
+                        </Link>
                       </div>
-                    ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -63,7 +59,7 @@ const Navbar = () => {
           </li>
         </Link>
 
-        <Link to="/solutions">
+        {/* <Link to="/solutions">
           <li>
             <div className="dropdown dropdown-hover z-50">
               <label
@@ -194,10 +190,10 @@ const Navbar = () => {
               </div>
             </div>
           </li>
-        </Link>
+        </Link> */}
       </div>
 
-      <div className=" lg:flex lg:absolute lg:-right-[650px] mt-6 lg:mt-0">
+      <div className=" lg:flex lg:absolute lg:-right-[950px] mt-6 lg:mt-0">
         <button className="text-xl px-8 border-0 text-white font-semibold mb-6 lg:mb-0">
           Login
         </button>
@@ -207,13 +203,6 @@ const Navbar = () => {
   );
   return (
     <div className="fixed w-full z-30">
-      <div className="bg-[#269e16]">
-        <p className="text-white text-center font-bold py-3 lg:text-lg px-4 lg:px-0 text-xs">
-          FREE WEBINAR THIS THURSDAY! PFAS Restrictions in Electronics: What You
-          Need to Know - Register Now, limited spaces left
-        </p>
-      </div>
-
       <div className="navbar bg-gradient-to-r from-[#001534] to-[#044876] font-bold lg:px-6 h-24 text-white ">
         <div className="navbar-start">
           {/* menu drawer */}
