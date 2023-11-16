@@ -3,6 +3,7 @@ import Brand from "./Brand";
 // import Testimonial from "./Testimonial";
 import BridgeCountUp from "./BridgeCountUp";
 import Feature from "./Feature";
+import OurIndustry from "./OurIndustry";
 import Profitability from "./Profitability";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner />
       <Brand />
       <BridgeCountUp />
+      <OurIndustry />
       <Feature />
       {/* <Testimonial /> */}
       <Profitability />

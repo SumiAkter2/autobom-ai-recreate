@@ -194,7 +194,7 @@ const Navbar = () => {
       </div>
 
       <div className=" lg:flex lg:absolute lg:-right-[950px] mt-6 lg:mt-0">
-        <button className="text-xl px-8 border-0 text-white font-semibold mb-6 lg:mb-0">
+        <button className="text-xl px-8 border-0 text-white font-semibold mb-6 lg:mb-0 mr-6">
           Login
         </button>
         <a href="mailto:hariish@autobom.ai">
