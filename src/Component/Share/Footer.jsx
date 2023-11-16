@@ -5,7 +5,9 @@ const Footer = () => {
     <div>
       <div className="bg-[#075b8d] text-white p-8 lg:flex justify-between items-center text-center">
         <h1 className="text-4xl lg:ml-12">Get started with a free trial! </h1>
-        <PrimaryButton text="Start Free Trial!" />
+        <a href="mailto:hariish@autobom.ai ">
+          <PrimaryButton text="Start Free Trial!" />
+        </a>
       </div>
       <footer className="footer p-10 bg-accent text-white lg:px-20">
         <nav>

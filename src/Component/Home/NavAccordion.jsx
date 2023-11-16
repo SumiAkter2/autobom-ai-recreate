@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 import "./NavAccordion.css";
-import { HiOutlineNewspaper } from "react-icons/hi";
-import { GoNote } from "react-icons/go";
-import { SlEnvolopeLetter } from "react-icons/sl";
-import { GiRadioTower } from "react-icons/gi";
-import { GiCargoCrane } from "react-icons/gi";
-import { BiSolidCarMechanic } from "react-icons/bi";
-import { BiFirstAid } from "react-icons/bi";
-import { BiSpreadsheet } from "react-icons/bi";
-import { BsAirplaneEngines } from "react-icons/bs";
-import { RiComputerLine } from "react-icons/ri";
-import { MdOutlineDeviceHub } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
+// import { HiOutlineNewspaper } from "react-icons/hi";
+// import { GoNote } from "react-icons/go";
+// import { SlEnvolopeLetter } from "react-icons/sl";
+// import { GiRadioTower } from "react-icons/gi";
+// import { GiCargoCrane } from "react-icons/gi";
+// import { BiSolidCarMechanic } from "react-icons/bi";
+// import { BiFirstAid } from "react-icons/bi";
+// import { BiSpreadsheet } from "react-icons/bi";
+// import { BsAirplaneEngines } from "react-icons/bs";
+// import { RiComputerLine } from "react-icons/ri";
+// import { MdOutlineDeviceHub } from "react-icons/md";
+// import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import { featureInfo } from "../Info/Info";
+// import { featureInfo } from "../Info/Info";
+import f1Img from "../../assets/Feature/f1.webp";
 
 function NavAccordion() {
   return (
@@ -22,13 +23,38 @@ function NavAccordion() {
         <section className="accordion-item">
           <Link to="/coming">
             <label className="flex m-1 justify-between text-black">
-              <span className="z-10"> Products</span>
+              <span className="z-10"> About Us</span>
               <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
             </label>
           </Link>
           <div className="accordion-item-content">
             <div className=" hover:cursor-auto   shadow-lg border text-black p-8 z-50">
-              <div className="lg:flex justify-center items-center ">
+              <div
+                tabIndex={0}
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[400px]  top-10 border text-black p-6 z-50"
+              >
+                <div className="lg:flex justify-between items-center">
+                  <div>
+                    <h3 className="text-xl my-2">Our Platform</h3>
+                    <p className="">Vision</p>
+                    {/* <button className="mt-3 text-skyblue-500 flex  items-center">
+                      Learn More <MdArrowForwardIos className="ml-2" />
+                    </button> */}
+                  </div>
+                  <div className="ml-4">
+                    <div className="flex justify-start items-center gap-3">
+                      <img className="w-6" src={f1Img} alt="logo" />
+                      <div>
+                        <h3 className="text-xl my-1">Autobom</h3>
+                        <Link to="/coming" className="text-gray-600">
+                          Learn More
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="lg:flex justify-center items-center ">
                 <div className="text-[16px]">
                   <h3 className=" my-2">Our Platform</h3>
                   <p className="">Risk intelligence at your fingertips</p>
@@ -51,11 +77,11 @@ function NavAccordion() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
-        <section className="accordion-item">
+        {/* <section className="accordion-item">
           <Link to="/coming">
             <label className="flex justify-between m-1 text-black">
               <span className="z-1"> Sources</span>{" "}
@@ -117,9 +143,9 @@ function NavAccordion() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="accordion-item ">
+        {/* <section className="accordion-item ">
           <Link to="/coming">
             <label className="flex justify-between m-1 text-black  items-center">
               Resources <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
@@ -175,12 +201,14 @@ function NavAccordion() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       <button className="text-xl px-8 border-0 text-black font-semibold my-6 lg:mb-0">
         Login
       </button>
-      <button className="button lg:w-fit w-[300px]"> Start Free Trial</button>
+      <a href="mailto:hariish@autobom.ai">
+        <button className="button lg:w-fit w-[300px]"> Start Free Trial</button>
+      </a>
     </div>
   );
 }

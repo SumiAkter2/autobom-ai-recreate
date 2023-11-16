@@ -197,7 +197,11 @@ const Navbar = () => {
         <button className="text-xl px-8 border-0 text-white font-semibold mb-6 lg:mb-0">
           Login
         </button>
-        <button className="button lg:w-fit w-[300px]"> Start Free Trial</button>
+        <a href="mailto:hariish@autobom.ai">
+          <button className="button lg:w-fit w-[300px]">
+            Start Free Trial
+          </button>
+        </a>
       </div>
     </div>
   );
