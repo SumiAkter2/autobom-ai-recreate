@@ -5,21 +5,6 @@ import img from "../../assets/dashboard/dashboard.png";
 const Banner = () => {
   return (
     <div className="bg-gradient-to-r from-[#001534] to-[#044876]">
-      {/* <div className="lg:w-[600px] ">
-        <h1 className="lg:text-5xl text-3xl font-bold mb-4 leading-8 ">
-          Meet AUTOBOM Ai
-        </h1>
-        <p className="py-6 text-xl">
-          Revolutionizing BOM Optimization with Ai power. Reducing cost, lead
-          times and optimizing engineering.
-        </p>
-
-        <div className="mt-6 mb-12 lg:flex lg:justify-start justify-center items-center">
-          <PrimaryButton text="Start free trial"> </PrimaryButton>
-          <SecondaryButton text2="Schedule a demo"> </SecondaryButton>
-        </div>
-      </div> */}
-
       <div className="hero lg:h-[720px] h-[900px] shadow-lg  lg:pt-16 pt-20 px-2 ">
         <div className="lg:hero-content lg:flex-row-reverse  ">
           <div className=" lg:text-start text-center  lg:absolute left-10 ">
