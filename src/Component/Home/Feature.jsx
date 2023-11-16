@@ -1,11 +1,10 @@
-import { featureInfo } from "../Info/Info";
-import { MdOutlineDone } from "react-icons/md";
-import PrimaryButton from "../Share/Button/PrimaryButton";
+import { manageSpeedInfo } from "../Info/Info";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
 import { Autoplay } from "swiper/modules";
-import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 
 const Feature = () => {
   return (
@@ -62,8 +61,25 @@ const Feature = () => {
           </div>
         </div>
       </div>
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6 lg:mx-32 mx-6 my-12">
+        {manageSpeedInfo.map((info) => (
+          <div key={info.id}>
+            <div className="font-semibold p-6 border border-gray-700 lg:h-[420px] h-80 rounded-lg hover:border-gray-300 relative">
+              <div className="mb-4">
+                <p>{info.img}</p>
+              </div>
+              <h1 className="text-xl font-bold">{info.name}</h1>
+              <p className="my-4 ">{info.des} </p>
 
-      <div className="grid lg:grid-cols-3 gap-10  lg:mx-24 mx-6">
+              <button className="pointer text-[#001534] font-bold flex items-center absolute bottom-4 right-2  btn btn-ghost">
+                {info.btn}
+                <BsArrowRight size="25px" color="#001534" className="ml-2 " />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="grid lg:grid-cols-3 gap-10  lg:mx-24 mx-6">
         {featureInfo.map((f) => (
           <div
             key={f.id}
@@ -105,7 +121,7 @@ const Feature = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

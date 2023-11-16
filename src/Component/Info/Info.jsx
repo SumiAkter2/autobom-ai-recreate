@@ -5,6 +5,46 @@ import f4Img from "../../assets/Feature/f4.webp";
 import f5Img from "../../assets/Feature/f5.webp";
 import f6Img from "../../assets/Feature/f6.webp";
 
+import { BsFillClockFill } from "react-icons/bs";
+import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { MdFindInPage } from "react-icons/md";
+import { MdHighQuality } from "react-icons/md";
+
+const clock = <BsFillClockFill size="30px" />;
+const dollar = <RiMoneyDollarBoxFill size="30px" />;
+const travel = <MdFindInPage size="30px" />;
+const quality = <MdHighQuality size="30px" />;
+export const manageSpeedInfo = [
+  {
+    id: 1,
+    img: clock,
+    name: "Cut Lead Times",
+    des: "Component IQ doesn't just find alternatives; it optimizes your BOM for cost- efficiency  and faster lead times. It's like having an entire team of experts who know the electronic component market inside out.",
+    btn: "Contact",
+  },
+  {
+    id: 2,
+    img: dollar,
+    name: " Slash component costs",
+    des: "Once the analysis is complete, you'll receive a detailed report. It outlines the cost savings achieved, how much you can save per component, and the overall impact on your project's budget.",
+    btn: "Learn more",
+  },
+  {
+    id: 3,
+    img: travel,
+    name: " Find 1:1 alternatives",
+    des: "The magic happens here. Component IQ, our AI engine, carefully matches each of your components with 1:1 alternatives that perfectly align with datasheet specifications.",
+    btn: "Learn more",
+  },
+  {
+    id: 4,
+    img: quality,
+    name: "Ensure higher quality",
+    des: "Don't worry; we never compromises on quality. Component IQ ensures that every alternative component it suggests meets the highest quality and specification standards.",
+    btn: "Learn more",
+  },
+];
+
 export const featureInfo = [
   {
     id: 1,
