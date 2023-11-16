@@ -7,6 +7,15 @@ const Profitability = () => {
     const email1 = e.target.email.value;
     const phone1 = e.target.phone.value;
     console.log({ name: name1, email: email1, phone: phone1 });
+    const emailUseName = name1;
+    const emailBody = `Hi ,My name is ${name1}. I want to start free trial now.,My phone number is ${phone1} and email is ${email1}`;
+
+    const mailtoLink = `mailto:sumiakter6335@gmail.com?subject=${encodeURIComponent(
+      emailUseName
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoLink;
   };
   return (
     <div className="lg:flex justify-center items-center gap-10 my-20 font-semibold">
