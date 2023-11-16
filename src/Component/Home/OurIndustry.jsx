@@ -21,17 +21,17 @@ const OurIndustry = () => {
         modules={[Autoplay]}
         breakpoints={{
           320: {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
             spaceBetween: 30,
           },
 
           480: {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
             spaceBetween: 30,
           },
 
           640: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 40,
           },
           768: {
@@ -47,10 +47,10 @@ const OurIndustry = () => {
       >
         {featureInfo.map((f) => (
           <SwiperSlide key={f.id}>
-            <div className="flex justify-start items-start gap-3 mt-6">
+            <div className="flex justify-start lg:items-start items-center gap-3 mt-6">
               <img className="w-6" src={f.img} alt="logo" />
               <div>
-                <h3 className="text-xl font-bold my-1">{f.title}</h3>
+                <h3 className="lg:text-xl font-bold my-1">{f.title}</h3>
                 {/* <Link to="/coming" className="text-gray-600 text-xs">
                   {f.btn}
                 </Link> */}
