@@ -58,6 +58,7 @@ export const featureInfo = [
     feature5: "Cross Reference & Compare",
     feature6: "BOM Analysis & Reports",
     btn: "Learn more",
+    bg: "red",
   },
   {
     id: 2,
@@ -71,6 +72,7 @@ export const featureInfo = [
     feature5: "Export to PLM or ERP tools",
     feature6: "Monitor 105+ Regulations",
     btn: "Coming soon",
+    bg: "yellow",
   },
   {
     id: 3,
@@ -84,6 +86,7 @@ export const featureInfo = [
     feature5: "Real-time Event Monitoring",
     feature6: "Real-time Market Alerts",
     btn: "Coming soon",
+    bg: "purple",
   },
   {
     id: 4,
@@ -97,6 +100,7 @@ export const featureInfo = [
     feature5: "Country Dependency Risk",
     feature6: "Alerts on New Banned Entities",
     btn: "Coming soon",
+    bg: "green",
   },
   {
     id: 5,
@@ -110,6 +114,7 @@ export const featureInfo = [
     feature5: "Custom Internal Workflow",
     feature6: "PCNs by supplier",
     btn: "Coming soon",
+    bg: "orange",
   },
   {
     id: 6,
@@ -123,5 +128,6 @@ export const featureInfo = [
     feature5: "Financials, Patents",
     feature6: "Alerts on Events, M&A",
     btn: "Coming soon",
+    bg: "#000",
   },
 ];
