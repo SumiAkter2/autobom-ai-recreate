@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import PrimaryButton from "../Share/Button/PrimaryButton";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const Profitability = () => {
   const form = useRef();
@@ -18,6 +19,13 @@ const Profitability = () => {
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            position: "top-center",
+            icon: "success",
+            title: "Your Email has send Successfully!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         },
         (error) => {
           console.log(error.text);
@@ -38,7 +46,7 @@ const Profitability = () => {
     <div className="lg:flex justify-center items-center gap-10 my-20 font-semibold">
       <div className="lg:w-[400px] text-center lg:text-start px-6 lg:px-0">
         <h1 className="lg:text-4xl text-3xl text-primary mb-6">
-          Free Trial Includes:
+          Free Trial Includes
         </h1>
         <p className="text-xl my-4">
           {" "}
