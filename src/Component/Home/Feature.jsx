@@ -71,10 +71,12 @@ const Feature = () => {
               <h1 className="text-xl font-bold">{info.name}</h1>
               <p className="my-4 ">{info.des} </p>
 
-              <button className="pointer text-[#001534] font-bold flex items-center absolute bottom-4 right-2  btn btn-ghost">
-                {info.btn}
-                <BsArrowRight size="25px" color="#001534" className="ml-2 " />
-              </button>
+              <a href={info.email}>
+                <button className="pointer text-[#001534] font-bold flex items-center absolute bottom-4 right-2  btn btn-ghost">
+                  {info.btn}
+                  <BsArrowRight size="25px" color="#001534" className="ml-2 " />
+                </button>
+              </a>
             </div>
           </div>
         ))}

@@ -21,6 +21,7 @@ export const manageSpeedInfo = [
     name: "Cut Lead Times",
     des: "Component IQ doesn't just find alternatives; it optimizes your BOM for cost- efficiency  and faster lead times. It's like having an entire team of experts who know the electronic component market inside out.",
     btn: "Contact",
+    email: "mailto:hariish@autobom.ai",
   },
   {
     id: 2,

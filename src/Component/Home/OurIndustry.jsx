@@ -4,18 +4,13 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { HiOutlineNewspaper } from "react-icons/hi";
-import { GoNote } from "react-icons/go";
-import { SlEnvolopeLetter } from "react-icons/sl";
+
 import { GiRadioTower } from "react-icons/gi";
 import { GiCargoCrane } from "react-icons/gi";
 import { BiSolidCarMechanic } from "react-icons/bi";
 import { BiFirstAid } from "react-icons/bi";
-import { BiSpreadsheet } from "react-icons/bi";
 import { BsAirplaneEngines } from "react-icons/bs";
 import { RiComputerLine } from "react-icons/ri";
-import { MdOutlineDeviceHub } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
 
 const OurIndustry = () => {
   return (
