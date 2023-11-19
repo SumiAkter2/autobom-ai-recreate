@@ -67,75 +67,69 @@ const OurIndustry = () => {
         >
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 text-white mb-24 `}
             >
-              <div className="flex justify-center items-center my-6">
+              <div className="flex  justify-center items-center ">
                 <RiComputerLine color="#fff" size="55px" />
               </div>
+              <h3 className=" font-bold text-center  mt-3 ">
+                Consumer Electronics
+              </h3>
             </div>
-            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
-              Consumer Electronics
-            </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 text-white mb-24`}
             >
-              <div className="flex justify-center items-center my-6">
+              <div className="flex justify-center items-center">
                 <BsAirplaneEngines color="#fff" size="55px" />
               </div>
+              <h3 className="  font-bold  text-center ">Aerospace & Defense</h3>
             </div>
-            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
-              Aerospace & Defense
-            </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 text-white mb-24`}
             >
-              <div className="flex justify-center items-center my-6">
+              <div className="flex justify-center items-center ">
                 <BiSolidCarMechanic color="#fff" size="55px" />
               </div>
+              <h3 className="  font-bold text-center mt-3">Automotive</h3>
             </div>
-            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
-              Automotive
-            </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 text-white mb-24`}
             >
-              <div className="flex justify-center items-center my-6">
+              <div className="flex justify-center items-center ">
                 <GiRadioTower color="#fff" size="55px" />
               </div>
+              <h3 className="  font-bold text-center mt-3">
+                Telecommunications
+              </h3>
             </div>
-            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
-              Telecommunications
-            </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 text-white mb-24`}
             >
-              <div className="flex justify-center items-center my-6">
+              <div className="flex justify-center items-center ">
                 <BiFirstAid color="#fff" size="55px" />
               </div>
+              <h3 className="  font-bold text-center mt-3">
+                Healthcare & Medical Devices
+              </h3>
             </div>
-            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
-              Healthcare & Medical Devices
-            </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 text-white mb-24`}
             >
-              <div className="flex justify-center items-center my-6">
+              <div className="flex justify-center items-center ">
                 <GiCargoCrane color="#fff" size="55px" />
               </div>
+              <h3 className="  font-bold  text-center mt-3">Industrial</h3>
             </div>
-            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
-              Industrial
-            </h3>
           </SwiperSlide>
         </Swiper>
       </div>
