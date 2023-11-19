@@ -23,10 +23,7 @@ const Navbar = () => {
         <Link to="/coming">
           <li>
             <div className="dropdown dropdown-hover z-50">
-              <label
-                tabIndex={0}
-                className="flex m-1 hover:text-secondary text-primary"
-              >
+              <label tabIndex={0} className="flex m-1  text-primary">
                 <span className="z-10"> About Us</span>
                 <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
               </label>
