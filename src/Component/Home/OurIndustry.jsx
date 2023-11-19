@@ -4,12 +4,18 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import f1Img from "../../assets/Feature/f1.webp";
-import f2Img from "../../assets/Feature/f2.webp";
-import f3Img from "../../assets/Feature/f3.webp";
-import f4Img from "../../assets/Feature/f4.webp";
-import f5Img from "../../assets/Feature/f5.webp";
-import f6Img from "../../assets/Feature/f6.webp";
+import { HiOutlineNewspaper } from "react-icons/hi";
+import { GoNote } from "react-icons/go";
+import { SlEnvolopeLetter } from "react-icons/sl";
+import { GiRadioTower } from "react-icons/gi";
+import { GiCargoCrane } from "react-icons/gi";
+import { BiSolidCarMechanic } from "react-icons/bi";
+import { BiFirstAid } from "react-icons/bi";
+import { BiSpreadsheet } from "react-icons/bi";
+import { BsAirplaneEngines } from "react-icons/bs";
+import { RiComputerLine } from "react-icons/ri";
+import { MdOutlineDeviceHub } from "react-icons/md";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const OurIndustry = () => {
   return (
@@ -66,72 +72,74 @@ const OurIndustry = () => {
         >
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-red-400 w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
             >
               <div className="flex justify-center items-center my-6">
-                <img className="w-12" src={f1Img} alt="logo" />
+                <RiComputerLine color="#fff" size="55px" />
               </div>
             </div>
-            <h3 className=" lg:text-xl font-bold mt-2 mb-24 text-center ml-4">
-              Autobom
+            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
+              Consumer Electronics
             </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-green-400 w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
             >
               <div className="flex justify-center items-center my-6">
-                <img className="w-12" src={f2Img} alt="logo" />
+                <BsAirplaneEngines color="#fff" size="55px" />
               </div>
             </div>
-            <h3 className=" lg:text-xl font-bold mt-2 mb-24 text-center ml-4">
-              Compliance Manager
+            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
+              Aerospace & Defense
             </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-yellow-400 w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
             >
               <div className="flex justify-center items-center my-6">
-                <img className="w-12" src={f3Img} alt="logo" />
+                <BiSolidCarMechanic color="#fff" size="55px" />
               </div>
             </div>
-            <h3 className=" lg:text-xl font-bold mt-2 mb-24 text-center ml-4">
-              Supply Chain Watch
+            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
+              Automotive
             </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-purple-400 w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
             >
               <div className="flex justify-center items-center my-6">
-                <img className="w-12" src={f4Img} alt="logo" />
+                <GiRadioTower color="#fff" size="55px" />
               </div>
             </div>
-            <h3 className=" lg:text-xl font-bold mt-2 mb-24 text-center ml-4">
-              Sub-Tier Intelligence
+            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
+              Telecommunications
             </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
             <div
-              className={`text-center mt-12 p-8 rounded-md bg-blue-400 w-48 h-48 `}
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
             >
               <div className="flex justify-center items-center my-6">
-                <img className="w-12" src={f5Img} alt="logo" />
+                <BiFirstAid color="#fff" size="55px" />
               </div>
             </div>
-            <h3 className=" lg:text-xl font-bold mt-2 mb-24 text-center ml-4">
-              PCN Manager
+            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
+              Healthcare & Medical Devices
             </h3>
           </SwiperSlide>
           <SwiperSlide className="px-12">
-            <div className={` mt-12 p-8 rounded-md bg-sky-400 w-48 h-48 `}>
+            <div
+              className={`text-center mt-12 p-8 rounded-md bg-[#001534] w-48 h-48 `}
+            >
               <div className="flex justify-center items-center my-6">
-                <img className="w-12" src={f6Img} alt="logo" />
+                <GiCargoCrane color="#fff" size="55px" />
               </div>
             </div>
-            <h3 className="lg:text-xl  font-bold mt-2 mb-24 text-center ml-4">
-              Supplier Insights
+            <h3 className="  font-bold mt-2 mb-24 text-center ml-4">
+              Industrial
             </h3>
           </SwiperSlide>
         </Swiper>
