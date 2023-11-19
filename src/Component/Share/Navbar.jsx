@@ -11,7 +11,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 // import { MdOutlineDeviceHub } from "react-icons/md";
 // import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-// import { GoNote } from "react-icons/go";
+import logo from "../../assets/logo/logo-brand1.png";
 import { Link } from "react-router-dom";
 import f1Img from "../../assets/Feature/f1.webp";
 import NavAccordion from "../Home/NavAccordion";
@@ -25,14 +25,14 @@ const Navbar = () => {
             <div className="dropdown dropdown-hover z-50">
               <label
                 tabIndex={0}
-                className="flex m-1 hover:text-secondary text-white"
+                className="flex m-1 hover:text-secondary text-primary"
               >
                 <span className="z-10"> About Us</span>
                 <IoIosArrowDown size="20px" className="mt-2 ml-2 " />
               </label>
               <div
                 tabIndex={0}
-                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[400px]  top-10 border text-black p-6 z-50"
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white lg:w-[400px]  top-10 border text-primary p-6 z-50"
               >
                 <div className="lg:flex justify-between items-center">
                   <div>
@@ -71,7 +71,7 @@ const Navbar = () => {
               </label>
               <div
                 tabIndex={0}
-                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-black p-8 z-50"
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-primary p-8 z-50"
               >
                 <div className="ml-4">
                   <h1 className="text-xl my-2">By Industry </h1>
@@ -139,7 +139,7 @@ const Navbar = () => {
               </label>
               <div
                 tabIndex={0}
-                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-black p-8 z-50"
+                className="dropdown-content hover:cursor-auto menu  shadow-lg bg-white w-[300px]  top-10 border text-primary p-8 z-50"
               >
                 <div className="ml-4">
                   <p className="flex justify-start items-center my-4">
@@ -194,7 +194,7 @@ const Navbar = () => {
       </div>
 
       <div className=" lg:flex lg:absolute lg:-right-[950px] mt-6 lg:mt-0">
-        <button className="text-xl px-8 border-0 text-white font-semibold mb-6 lg:mb-0 mr-6">
+        <button className="text-xl px-8 border-0 text-primary font-semibold mb-6 lg:mb-0 mr-6">
           Login
         </button>
         <a href="mailto:hariish@autobom.ai">
@@ -207,7 +207,7 @@ const Navbar = () => {
   );
   return (
     <div className="fixed w-full z-30">
-      <div className="navbar bg-gradient-to-r from-[#001534] to-[#044876] font-bold lg:px-6 h-24 text-white ">
+      <div className="navbar  font-bold lg:px-6 h-28  bg-gray-200">
         <div className="navbar-start">
           {/* menu drawer */}
           <div className="drawer lg:hidden ">
@@ -234,7 +234,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link to="/" className=" font-bold text-xl ">
-            AUTOBOM.ai
+            <img className="w-24" src={logo} alt="brand-logo" />
           </Link>
           <ul className="menu lg:menu-horizontal hidden px-1 ml-6 text-xl ">
             {navItem}

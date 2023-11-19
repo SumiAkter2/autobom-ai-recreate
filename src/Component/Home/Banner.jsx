@@ -4,11 +4,11 @@ import img from "../../assets/dashboard/dashboard.png";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-[#001534] to-[#044876]">
+    <div className="">
       <div className="hero lg:h-[720px] h-[900px] shadow-lg  lg:pt-16 pt-20 px-2 ">
         <div className="lg:hero-content lg:flex-row-reverse  ">
           <div className=" lg:text-start text-center  lg:absolute left-10 ">
-            <div className=" text-white  font-sans">
+            <div className=" text-black  font-sans">
               <h1 className="mb-6 lg:text-5xl text-3xl font-bold">
                 Meet AUTOBOM Ai
               </h1>

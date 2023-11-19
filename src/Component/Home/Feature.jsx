@@ -64,7 +64,7 @@ const Feature = () => {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6 lg:mx-32 mx-6 my-12">
         {manageSpeedInfo.map((info) => (
           <div key={info.id}>
-            <div className="font-semibold p-6 border border-gray-700 lg:h-[420px] h-80 rounded-lg hover:border-gray-300 relative">
+            <div className="font-semibold p-6 border border-[#9793db] lg:h-[420px] h-80 rounded-lg hover:border-gray-300 relative">
               <div className="mb-4">
                 <p>{info.img}</p>
               </div>
@@ -72,7 +72,7 @@ const Feature = () => {
               <p className="my-4 ">{info.des} </p>
 
               <a href={info.email}>
-                <button className="pointer text-[#001534] font-bold flex items-center absolute bottom-4 right-2  btn btn-ghost">
+                <button className="pointer text-accent font-bold flex items-center absolute bottom-4 right-2  btn btn-ghost ">
                   {info.btn}
                   <BsArrowRight size="25px" color="#001534" className="ml-2 " />
                 </button>

@@ -15,28 +15,28 @@ const BridgeCountUp = () => {
       </p>
       <div className="grid lg:grid-cols-3 gap-4 my-6  leading-10 lg:mx-24 mx-6">
         <div>
-          <div className="text-[#075b8d] lg:text-5xl text-3xl font-bold my-6 ">
+          <div className="text-accent lg:text-5xl text-3xl font-bold my-6 ">
             <CountUp delay={3} end={1} />
             Billion+
           </div>
           <p className="flex justify-center items-center">
-            <FaMicrochip color="#075b8d" size="40px" />
+            <FaMicrochip color="#001534" size="40px" />
           </p>
         </div>
         <div>
-          <div className="text-[#075b8d] lg:text-5xl text-3xl font-bold my-6">
+          <div className="text-accent lg:text-5xl text-3xl font-bold my-6">
             <CountUp delay={3} end={150} />K
           </div>
           <p className="flex justify-center items-center">
-            <GiWorld color="#075b8d" size="40px" />
+            <GiWorld color="#001534" size="40px" />
           </p>
         </div>
         <div>
-          <div className="text-[#075b8d] lg:text-5xl text-3xl font-bold my-6">
+          <div className="text-accent lg:text-5xl text-3xl font-bold my-6">
             <CountUp delay={3} end={50} />K
           </div>
           <p className="flex justify-center items-center">
-            <FaIndustry color="#075b8d" size="40px" />
+            <FaIndustry color="#001534" size="40px" />
           </p>
         </div>
       </div>
