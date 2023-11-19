@@ -231,7 +231,11 @@ const Navbar = () => {
             </div>
           </div>
           <Link to="/" className=" font-bold text-xl ">
-            <img className="w-24" src={logo} alt="brand-logo" />
+            <img
+              className="lg:w-24 w-28 ml-10 lg:ml-0"
+              src={logo}
+              alt="brand-logo"
+            />
           </Link>
           <ul className="menu lg:menu-horizontal hidden px-1 ml-6 text-xl ">
             {navItem}
